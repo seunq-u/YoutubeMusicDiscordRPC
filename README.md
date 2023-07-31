@@ -1,4 +1,4 @@
-# ⭐ YOUTUBE MUSIC discord RPC 🎺
+# ⭐ DISCORD RPC FOR YOUTUBE MUSIC 🎺
 
 <!DOCTYPE html>
 <html lang="ko">
@@ -19,7 +19,7 @@
     </body>
 </html>
 
-- [⭐ YOUTUBE MUSIC discord RPC 🎺](#-youtube-music-discord-rpc-)
+- [⭐ DISCORD RPC FOR YOUTUBE MUSIC 🎺](#-discord-rpc-for-youtube-music-)
   - [⚠️ WARN](#️-warn)
   - [👁️ PREVIEW](#️-preview)
   - [⚙️ SETUP](#️-setup)
@@ -70,8 +70,8 @@ ___❌ 이 프로그램에서 생성된 `./chrome` 폴더에는 모든 로그인
 디스코드와 크롬을 설치한 상태에서 진행해 주세요.  
 
 - 디스코드 세팅
-    `사용자 설정` -> `활동 개인정보` -> `활동 상태`  를 활성화 해 주세요
-        ![help1]( example_img/help1.png "setup4-1.png")  
+    `사용자 설정` -> `활동 개인정보` -> `활동 상태`  를 활성화해 주세요
+        ![help1](example_img/help1.png "setup4-1.png")  
 
 진행 또는 사용 과정에서 발생하는 문제는 다음을 참고해 주세요.
 [🛟HELPME](#🛟-help-me)
@@ -165,16 +165,17 @@ ___그리고 꼭 여기서 열린 크롬창은 닫아주세요!___
     보통 파이썬 라이브러리 버전과 크롬의 버전이 일치하지 않아서 발생해요.  
     위와 같이 기본적으로 자동 복구가 실행 되지만,  
     그럼에도 정상 작동하지 않는 경우 아래의 절차를 참고해 보세요. :)  
-    1. `./chrome` 와 `./__pycache__` 폴더 삭제
-    2. 크롬 업데이트 (오른쪽 위 점 3개 -> 도움말 -> 크롬 정보)
-    3. `chrome.bat` 실행 후 유튜브 뮤직에 로그인 후 ***꼭 닫기***
-    4. `install_lib.bat` 실행
-    5. `rpc.bat` 실행
-    6. RPC 즐기기 😎
+    1. `./chrome` 와 `./__pycache__` 폴더 삭제  
+    2. 크롬 업데이트 (오른쪽 위 점 3개 -> 도움말 -> 크롬 정보)  
+    3. `chrome.bat` 실행 후 유튜브 뮤직에 로그인 후 ___꼭 닫기___  
+    4. `install_lib.bat` 실행  
+    5. `rpc.bat` 실행  
+    6. RPC 즐기기 😎  
 
 ---
 
-이 외의 모든 문제는 아래로 문의해 주시기 바랍니다. 🫥
+___이 외의 모든 문제는 아래로 문의해 주시기 바랍니다. 🫥___
+
 |||
 |:--:|:--:|
 |Discord|dal.i|
