@@ -4,7 +4,7 @@
 <html lang="ko">
     <body>
         <div align="center">
-            <a href="https://github.com/qwertyquerty/pypresence">
+            <a href="https://www.microsoft.com/ko-kr/software-download/windows11">
                 <img id="im" src="https://img.shields.io/badge/only-window-blue.svg?style=for-the-badge&logo=windows&logoWidth=20&logoColor=blue"/>
             </a>
             <a href="https://github.com/qwertyquerty/pypresence">
