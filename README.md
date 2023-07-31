@@ -44,15 +44,15 @@ ___❌ 이 프로그램에서 생성된 `./chrome` 폴더에는 모든 로그인
         <div align="center">
             <h3>💬 In Server</h3>
             <img src="example_img/preview-server.png" alt="preview server">
-            <h3>😊 Friend Tab</h3>
+            <h3>😊 Friend Tab (IDLE/PLAYING/STOP)</h3>
             <img src="example_img/preview-friend-idle.png" alt="preview friend tab idle">
             <img src="example_img/preview-friend-play.png" alt="preview friend tab play">
             <img src="example_img/preview-friend-stop.png" alt="preview friend tab stop">
-            <h3>👤 User Tab</h3>
+            <h3>👤 User Tab (IDLE/PLAYING/STOP)</h3>
             <img src="example_img/preview-idle.png" alt="preview user tab idle">
             <img src="example_img/preview-play.png" alt="preview user tab play">
             <img src="example_img/preview-stop.png" alt="preview user tab stop">
-            <h3>🔍 User Detail Tab</h3>
+            <h3>🔍 User Detail Tab (IDLE/PLAYING/STOP)</h3>
             <img src="example_img/preview-idle2.png" alt="preview user detail tab idle">
             </br>
             <img src="example_img/preview-play2.png" alt="preview user detail tab play">
