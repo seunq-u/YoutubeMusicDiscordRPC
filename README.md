@@ -89,7 +89,7 @@ Add Python 3.11.1 to PATH 꼭 체크하고 설치하기
 
 ### 2. 가상환경 설정
 
-![CreateVenv]( example_img/setup2.png "setup2.png")  - [⭐ YOUTUBE MUSIC discord RPC 🎺](#-youtube-music-discord-rpc-)
+![CreateVenv](example_img/setup2.png "setup2.png")  
 
 다운로드한 파일이 있는 디렉터리에서 우클릭, 터미널을 열고  
 (아니면 주소창을 클릭하여 `cmd` 를 입력해도 돼요.)  
