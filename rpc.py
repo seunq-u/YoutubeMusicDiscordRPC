@@ -8,6 +8,7 @@ import sys
 import pypresence
 import time
 import threading
+import re
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
@@ -16,8 +17,12 @@ from selenium.webdriver.common.by import By
 
 global Data
 global CHROME_DIR_PATH
+global RE_IS_YTM_IMG_URL
+global RE_IMG_W_H
 
 CHROME_DIR_PATH = r'{}'.format(os.getcwd()+'''\\chrome''') # 크롬 폴더 주소
+RE_IS_YTM_IMG_URL = "https://lh3.googleusercontent.com"
+RE_IMG_W_H = "=w[0-9]{1,4}-h[0-9]{1,4}(-l[0-9]{1,4}-rj)?"
 
 class StateType:
     Running = 0
@@ -47,7 +52,7 @@ changeTimeDict = {
     3 : 86400, # 일(日)은 x84600배
 }
 
-waiting_time = 3
+waiting_time = 0
 
 def changeTime(time: str):
     """'12:34' 와 같은 형태를 754 (754초) 로 변환
@@ -139,7 +144,7 @@ def yt_music(*arg):
         print("Python 라이브러리와 Chrome을 업데이트해 보세요.\n그리고 ./chrome 폴더와 ./__pycache__폴더를 삭제한 다음, chrome.bat 을 실행하시고 다시 시작해 보세요.\033[0m\n")
 
         print("\033[92mAfter 10 seconds, all processes except for the Chrome update will be executed automatically. Press \033[93mCtrl + C\033[0m \033[93mto cancel\033[0m.")
-        print("10초뒤 크롬 업데이트를 제외한 과정이 자동으로 실행됩니다. \033[93m취소\033[0m하려면 \033[93mCtrl + C\033[0m를 누르세요.\033[0m\n")
+        print("\033[92m10초뒤 크롬 업데이트를 제외한 과정이 자동으로 실행됩니다. \033[93m취소\033[92m하려면 \033[93mCtrl + C\033[0m를 누르세요.\033[0m\n")
 
         for i in range(1, 11):
             print(f"    Waiting... {i} s", end='\r')
@@ -201,7 +206,10 @@ def yt_music(*arg):
                     Data["url"] = "https://music.youtube.com/"
 
                 try: # Get Thumbnail URL
-                    Data['img'] = driver.find_element(By.XPATH, """//*[@id="layout"]/ytmusic-player-bar/div[2]/div[1]/img""").get_attribute("src")
+                    Data['img']: str = driver.find_element(By.XPATH, """//*[@id="layout"]/ytmusic-player-bar/div[2]/div[1]/img""").get_attribute("src")
+                    if Data['img'].startswith(RE_IS_YTM_IMG_URL):
+                        Data['img'] = Data['img'].replace(re.search(RE_IMG_W_H, Data['img']).group(), "=w544-h544-l90-rj")
+
                     if Data['img'] == '':
                         Data['img'] = "https://music.youtube.com/img/favicon_144.png"
                 except:
